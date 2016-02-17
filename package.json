@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --inline --hot --content-base src/",
+    "lint": "eslint src/**.js{,x}",
     "watch": "webpack -w",
     "clean": "rm -r dist",
     "dist": "npm run clean && mkdir -p dist && cp src/index.html dist/ && NODE_ENV=production webpack"
@@ -36,6 +37,7 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
     "eslint": "^2.0.0",
+    "eslint-plugin-react": "^3.16.1",
     "imports-loader": "^0.6.5",
     "node-sass": "^3.4.2",
     "postcss-loader": "^0.8.1",
