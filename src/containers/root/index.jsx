@@ -49,7 +49,7 @@ class Root extends Component {
         );
     }
 }
-Root.proptypes = {
+Root.propTypes = {
     username: PropTypes.string,
     sayHello: PropTypes.func.isRequired,
 };
